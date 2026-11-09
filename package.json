@@ -1,0 +1,21 @@
+{
+  "name": "aflowiran",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "node --check server.js && node --check public/js/main.js",
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "build": "^0.1.4",
+    "dotenv": "^18.0.8",
+    "nodemailer": "^10.1.7"
+  }
+}

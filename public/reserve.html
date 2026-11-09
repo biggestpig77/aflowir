@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <title>رزرو مشاوره رایگان | AFLOW IRAN</title>
+  <link rel="stylesheet" href="/css/variables.css">
+  <link rel="stylesheet" href="/css/layout.css">
+  <link rel="stylesheet" href="/css/components.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="/" aria-label="AFLOW IRAN - خانه">
+      <img src="/assets/logo.png" alt="">
+      <span>AFLOW IRAN</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="باز کردن منو" aria-expanded="false" aria-controls="primary-navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="primary-navigation" aria-label="منوی اصلی">
+      <a href="/">خانه</a>
+      <a href="/how.html">چطوری؟</a>
+      <a href="/shop.html">خرید</a>
+      <a href="/contact.html">دیگر خدمات</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="booking-section">
+      <div class="booking-heading">
+        <h1>رزرو مشاوره رایگان</h1>
+        <p>چند مورد کوتاه را وارد کنید تا برای هماهنگی مشاوره از طریق ایمیل با شما در ارتباط باشیم.</p>
+      </div>
+
+      <form class="booking-form" id="booking-form">
+        <div class="form-field">
+          <label for="request-type">نوع درخواست شما</label>
+          <select id="request-type" name="requestType" required>
+            <option value="" disabled selected>نوع درخواست را انتخاب کنید</option>
+            <option>مشاوره خدمات چت بات</option>
+            <option>خرید و قیمت خدمات چت بات</option>
+            <option>خرید دلاری</option>
+            <option>طراحی وبسایت</option>
+            <option>دیگر</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="business-type">نوع کسب‌وکار شما</label>
+          <select id="business-type" name="businessType" required>
+            <option value="" disabled selected>نوع کسب‌وکار را انتخاب کنید</option>
+            <option>فروشگاه اینترنتی</option>
+            <option>فروشگاه حضوری</option>
+            <option>خدمات و مشاوره</option>
+            <option>آموزش و آموزشگاه</option>
+            <option>پزشکی و زیبایی</option>
+            <option>رستوران و کافه</option>
+            <option>املاک</option>
+            <option>تولید و صنعت</option>
+            <option>سایر</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="email">ایمیل شما</label>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="name@example.com" required>
+        </div>
+
+        <div class="form-field">
+          <label for="comments">توضیحات یا پرسش‌های شما <span>(اختیاری)</span></label>
+          <textarea id="comments" name="comments" rows="5" placeholder="هر نکته‌ای که برای مشاوره لازم است بدانیم بنویسید..."></textarea>
+        </div>
+
+        <button class="btn-primary" type="submit">ارسال درخواست رزرو</button>
+        <p class="booking-note" role="status" aria-live="polite">درخواست شما برای ما ایمیل می‌شود و از طریق همین نشانی با شما در ارتباط خواهیم بود.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer><p>© 2026 AFLOW IRAN</p></footer>
+  <script src="/js/main.js"></script>
+</body>
+</html>
